@@ -210,14 +210,19 @@ img {
 
 .feature-section-box-icon {
     margin-bottom: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     width: 264px;
     height: 112px;
     background-color: #f4f4fd;
     border: 1px solid #8e8f99;
     border-radius: 4px;
+}
+
+.feature-section-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .feature-section-title-item {
@@ -302,7 +307,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-section-item-social-icon:hover {
@@ -365,6 +372,14 @@ img {
     min-height: 312px;
 }
 
+.page-footer .container {
+    display: flex;
+}
+
+.footer-box-logo {
+    margin-right: 120px;
+}
+
 .link-logo-footer {
     margin-bottom: 16px;
     display: inline-block;
@@ -387,4 +402,46 @@ img {
     color: #f4f4fd;
     letter-spacing: 0.02em;
     max-width: 264px
+}
+
+.footer-box-social-icon {
+    width: 208px;
+    height: 80px;
+}
+
+.footer-list-box-icon {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-item-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #4d5ae5;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-item-icon:hover {
+    fill: #f4f4fd;
+    background-color: #31d0aa;
+    cursor: pointer;
+}
+
+.footer-title-icon {
+    margin-bottom: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-icon-social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
